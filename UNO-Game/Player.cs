@@ -8,6 +8,7 @@ namespace UNO_Game
     {
         public List<Card> CardsOnHand;
         public string Name;
+        public int Score { get; private set; }
 
         public Player(string name)
         {
@@ -25,6 +26,11 @@ namespace UNO_Game
             }
             else
                 return false;
+        }
+
+        public void SetScore(int s)
+        {
+            Score = s;
         }
 
         public override string ToString()

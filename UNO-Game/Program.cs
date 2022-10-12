@@ -10,7 +10,7 @@ namespace UNO_Game
             Deck deck = new Deck();
 
 
-            UNOController uc = new UNOController(deck,2 );
+            UNOController uc = new UNOController(deck, 2, 7);
             uc.deck.CreateDeck();
             uc.deck.ShuffleCards();
 
@@ -28,23 +28,7 @@ namespace UNO_Game
             
         }
         
-        static void PrintCard(Card c)
-        {
-            Console.WriteLine(
-                $"---------------\n" +
-                $"|             |\n" +
-                $"|             |\n" +
-                $"|             |\n" +
-                $"|             |\n" +
-                $"|{c}       |\n" +
-                $"|             |\n" +
-                $"|             |\n" +
-                $"|             |\n" +
-                $"---------------\n"
 
-
-                );
-        }
 
     }
 }
